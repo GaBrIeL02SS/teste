@@ -3,12 +3,14 @@
 :root{
      --cordefundo:#121212;
      --cortitulo:#EE0372;
+     --fontetitulo:"titulo"
 }
 
 @font-face {
-    font-family: lora;
-    src: url(fontes/lora/Lora-Bold.ttf) url(fontes/lora/Lora-Regular.ttf);
+    font-family: "titulo" ;
+    src: url(fontes/Angkor_Shadows_Into_Light_Two/Angkor-Regular.ttf) format(truetype);
 }
+
 
 *{
     margin: 0px;
@@ -17,6 +19,44 @@
 
 body{
     background-color: var(--cordefundo);
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+header{
+    background-color: var(--cortitulo);
+    padding: 20px;
+}
+
+header h1{
+    color: rgba(18, 17, 17, 0.805);
+    text-align: center;
+    font-family: var(--fontetitulo);
+}
+
+nav{
+    padding: 10px;
+    text-align: center;
+}  
+
+nav a{
+    padding: 10px;
+    margin: 5px;
+    background-color: var(--cortitulo);
+    display: inline-flex;
+    font-size: 2em;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 10px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    color:var(--cordefundo);
+    min-width: 200px;
+}
+
+nav a:hover{
+    padding: 15px;
+    transition: .5s;
+    color: white;
 }
 
 main{
@@ -26,7 +66,6 @@ main{
 
 main h1{
     color:var(--cortitulo);
-    font-family: lora, arial-selvetica;
     text-align: center;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -42,7 +81,6 @@ main img{
 
 main h2{
     color:var(--cortitulo);
-    font-family: lora, arial-selvetica;
     padding-top: 20px;
     padding-bottom: 20px;
     text-align: center;
@@ -50,14 +88,14 @@ main h2{
 }
 
 main h3{
-    font-family: lora, arial-selvetica;
+    margin: auto;
     text-align: center;
     padding-top: 10px;
     padding-bottom: 5px;
     color: white;
-    margin: auto;
     font-weight: 100;
     font-size: 30px;
+    max-width: 300px;
 }
 
 h3:hover{
@@ -69,7 +107,6 @@ h3:hover{
 }
 
 main p{
-    font-family: lora, arial-selvetica;
     text-align: center;
     padding-top: 5px;
     padding-bottom: 5px;
@@ -96,7 +133,27 @@ li p{
 }
 
 .des{
+    margin: 20px;
     text-align:center ;
     font-size: 25px;
-    color: rgba(255, 255, 255, 0.644);
+    color: rgba(255, 255, 255, 0.833);
+}
+
+footer{
+    background-color: var(--cortitulo);
+    padding: 10px;
+}
+
+footer li{
+    display: inline-flex;
+    align-items: center;
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+    margin: auto;
+    
+}
+
+footer img{
+    max-width: 100px;
 }
