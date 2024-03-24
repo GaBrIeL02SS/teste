@@ -1,7 +1,7 @@
 @charset "OTF-8";
 
 :root{
-     --cordefundo:black;
+     --cordefundo:white;
      --cortitulo:#e10573c9;
      --fontenav: "nav";
      --fontheader: "header";
@@ -23,11 +23,11 @@
 }
 
 body{
-    background-color: var(--cordefundo);
+    background-color:var(--cordefundo);
 }
 
 header{
-    background-color: var(--cordefundo);
+    background-color:var(--cordefundo);
     color: var(--cortitulo);
     padding: 20px;
 }
@@ -148,6 +148,7 @@ ul p{
 }
 
 footer{
+background-color: var(--cordefundo);
     padding: 20px;
     border-radius: 10px;
     border: solid 5px;
