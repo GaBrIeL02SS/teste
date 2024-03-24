@@ -1,7 +1,7 @@
 @charset "OTF-8";
 
 :root{
-     --cordefundo:white;
+     --cordefundo:black;
      --cortitulo:#e10573c9;
      --fontenav: "nav";
      --fontheader: "header";
